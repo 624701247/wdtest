@@ -21,15 +21,20 @@
             android:windowSoftInputMode="adjustPan|stateAlwaysVisible"
             android:configChanges="orientation|keyboardHidden|screenSize"
             >
-
         </activity>
 
 
-        <!-- test activity -->
+        <!-- test activity
+
+        // kone point : 横竖屏幕问题
+        android:screenOrientation="portrait" //指定为竖屏，并且禁止屏幕旋转
+        android:screenOrientation="landscape" //指定为横屏，并且禁止屏幕旋转
+        android:screenOrientation="sensor"      //由物理的感应器来决定。如果用户旋转设备这屏幕会横竖屏切换。 不设置 android:screenOrientation  默认也是这个
+
+        -->
         <activity android:name=".TestActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|orientation"
             android:theme="@style/AppTheme"
             >
 
