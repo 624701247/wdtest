@@ -36,7 +36,7 @@ public class TestActivity extends Activity {
             }
         }, 2000);
 
-        // 播放视频
+        // kone point 播放视频
         vv_video = (VideoView) findViewById(R.id.vv_videoview);
         String uri = "android.resource://" + getPackageName() + "/" + R.raw.yes;
         vv_video.setVideoURI(Uri.parse(uri));
